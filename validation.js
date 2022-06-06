@@ -5,6 +5,7 @@ const inputs = document.querySelectorAll('input'); // CSS Selector input
 
 const patterns = {
     username: /^[a-z\d]{5,12}$/i, // Alphanumeric between 5-12 digits
+    email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/, //email Regex
     password: /^[\w@-]{8,20}$/, //Any metacharacter, @ or hyphen
     telephone: /^\d{11}$/, //Accepts 11 digits, nothing else more at beginning or end
     slug: /^[a-z\d-]{8,20}$/
